@@ -1,0 +1,21 @@
+{
+  "name": "demo_cypress zerobank",
+  "version": "1.0.0",
+  "description": "Proyecto de pruebas practica cypress",
+  "main": "index.js",
+  "scripts": {
+    "tests": "cypress open",
+    "pruebas-chrome": "cypress run --spec cypress/e2e/smoketestbanco.cy.js --browser chrome ",
+    "pruebas-edge": "cypress run --spec cypress/e2e/smoketestbanco.cy.js --browser edge",
+    "pruebas-firefox": "cypress run --spec cypress/e2e/smoketestbanco.cy.js --browser firefox "
+  },
+  "author": "Esteban Balvin",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.1"
+  },
+  "devDependencies": {
+    "cypress-grep": "^2.14.0",
+    "cypress-mochawesome-reporter": "^3.1.0"
+  }
+}
